@@ -1,14 +1,19 @@
+/* Reset some default styles */
 body, h1, h2, h3, ul, li {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
 }
 
+/* Header Styles */
 header {
-  background-color: #333;
+  background-color: #222;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -16,4 +21,102 @@ header {
 
 h1 {
   font-size: 36px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d99741;
+}
+
+/* About Section */
+#about {
+  background-color: #444;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#about h2 {
+  font-size: 24px;
+  color: #fff;
+}
+
+#about p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* Portfolio Section */
+#portfolio {
+  background-color: #333;
+  padding: 50px;
+  text-align: center;
+}
+
+.portfolio-item {
+  margin: 20px;
+  display: inline-block;
+  background-color: #222;
+  padding: 20px;
+  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); */
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+#skills {
+  background-color: #222;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #111;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 24px;
+  color: #fff;
+}
+
+#contact p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #d99741;
+}
+
+#private {
+  text-align: center;
 }
